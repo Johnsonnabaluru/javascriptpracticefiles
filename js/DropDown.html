@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+    <style>
+        .header{
+            display: flex;
+            justify-content: left;
+            justify-content: space-around;
+        }
+        .profile-dropdown{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>MEN</div>
+        <div>WOMEN</div>
+        <div>KIDS</div>
+        <div>HOME&LIVING</div>
+        <div>BEAUTY</div>
+        <div>SUDIO</div>
+        <div>
+            <!-- <label for=""></label> -->
+            <input type="search">
+            <button>Search</button>
+        </div>
+        <div class="profile-dropdown" onchange="z()">
+            profile
+        </div>
+        <!-- <button id="profile" onmouseover="z()">
+            Login
+        </button> -->
+       <!-- <button onclick="z()">Profile</button> -->
+        <div  class="profile-list"></div>
+    </div>
+    <script src="./DropDown.js"></script>
+</body>
+</html>

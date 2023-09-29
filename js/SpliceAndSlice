@@ -1,0 +1,8 @@
+let arr=[10,20,"panda","rohit","pk","mohan"]
+console.log(arr);
+arr.splice(0,2,"Steeph","poojith") //[starting index,how many elements should be deleted,how many elements should be added]
+
+console.log(arr);
+arr.slice(0,5) // [starting index,ending index]
+console.log(arr);
+console.log(arr.slice(2));

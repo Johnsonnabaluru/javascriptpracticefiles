@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <th>S.NO</th>
+            <th>DAY</th>
+            <th>Period I</th>
+            <th>Period II</th>
+            <th>Period III</th>
+        </tr>
+    </table>
+    <div>
+        <button onclick="addrow()">Click to add row</button>
+    </div>
+    <script>
+        let table=document.querySelector("table")
+
+        
+
+        function addrow() {
+            let tr1=document.createElement("tr")
+
+            table.appendChild(tr1)
+
+            let td1=document.createElement("td")
+            let td2=document.createElement("td")
+            let td3=document.createElement("td")
+            let td4=document.createElement("td")
+            let td5=document.createElement("td")
+
+            let data1=prompt("Enter S.NO")
+            let data2=prompt("Enter DAY")
+            let data3=prompt("Enter PERIOD I")
+            let data4=prompt("Enter PERIOD II")
+            let data5=prompt("Enter PERIOD III")
+
+
+            td1.innerText=data1
+            td2.innerText=data2
+            td3.innerText=data3
+            td4.innerText=data4
+            td5.innerText=data5
+
+            tr1.appendChild(td1)
+            tr1.appendChild(td2)
+            tr1.appendChild(td3)
+            tr1.appendChild(td4)
+            tr1.appendChild(td5)
+        }
+
+    </script>
+</body>
+</html>

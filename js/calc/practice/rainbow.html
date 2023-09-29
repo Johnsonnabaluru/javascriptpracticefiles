@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>violet</div>
+    <div>indigo</div>
+    <div>blue</div>
+    <div>green</div>
+    <div>yellow</div>
+    <div>orange</div>
+    <div>red</div>
+    <script>
+        let divs=document.querySelectorAll("div")
+        divs.forEach((x)=>{
+            x.addEventListener("mouseover",()=>{
+                x.style.background=x.innerText
+            })
+            x.addEventListener("mouseout",()=>{
+                x.style.background="white"
+            })
+        })
+    </script>
+</body>
+</html>

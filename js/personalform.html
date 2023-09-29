@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+</head>
+<body>
+   <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile"><br>
+        <label for="email">Gmail ID:</label>
+        <input type="text" id="email" name="email"><br>
+        <button onclick="submitForm()">Submit</button>
+   </form>
+    <script>
+        function submitForm() {
+            event.preventDefault();
+
+            let name = document.getElementById("name").value;
+            let mobile = document.getElementById("mobile").value;
+            let email = document.getElementById("email").value;
+
+            if (name.length < 4){
+                alert("Name should contain minimum 4 letters");
+                console.log("Name should contain minimum 4 letters");
+            }
+            if (mobile.length != 10){
+                alert("Invalid mobile number");
+            }
+
+            console.log("Name: " + name);
+            console.log("Mobile: " + mobile);
+            
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+</head>
+<body>
+   <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile"><br>
+        <label for="email">Gmail ID:</label>
+        <input type="text" id="email" name="email"><br>
+        <button onclick="submitForm()">Submit</button>
+   </form>
+    <script>
+        function submitForm() {
+            event.preventDefault();
+
+            let formElements = document.querySelectorAll('form input');
+            let name = formElements[0].value;
+            let mobile = formElements[1].value;
+            let email = formElements[2].value;
+
+            if (name.length < 4){
+                alert("Name should contain minimum 4 letters");
+                console.log("Name should contain minimum 4 letters");
+            }
+            if (mobile.length != 10){
+                alert("Invalid mobile number");
+            }
+
+            console.log("Name: " + name);
+            console.log("Mobile: " + mobile);
+            console.log("Email: " + email);
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+</head>
+<body>
+   <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile"><br>
+        <label for="email">Gmail ID:</label>
+        <input type="text" id="email" name="email"><br>
+        <button onclick="submitForm()">Submit</button>
+   </form>
+    <script>
+        function submitForm() {
+            event.preventDefault();
+
+            let formElements = document.getElementsByTagName('input');
+            let name = formElements[0].value;
+            let mobile = formElements[1].value;
+            let email = formElements[2].value;
+
+            if (name.length < 4){
+                alert("Name should contain minimum 4 letters");
+                console.log("Name should contain minimum 4 letters");
+            }
+            if (mobile.length != 10){
+                alert("Invalid mobile number");
+            }
+
+            console.log("Name: " + name);
+            console.log("Mobile: " + mobile);
+            console.log("Email: " + email);
+        }
+    </script>
+</body>
+</html> -->
+

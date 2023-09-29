@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a">Domcument object model</h1>
+    <h2 id="b">dom</h2>
+    <h2>hello</h2>
+    <h2>bye</h2>
+    <h2>poojith</h2>
+    <section id="c">
+
+    </section>
+    <script>
+        let headingTag=document.getElementById("a")
+        let content = headingTag.innerText
+        headingTag.style.backgroundColor="lightskyblue"
+        headingTag.style.fontSize="49px"
+        headingTag.style.color="brown"
+        console.log(headingTag);
+        console.log(content);
+
+        let heading2=document.getElementById("a")
+        let content1=heading2.innerText
+        console.log(heading2);
+        console.log(content1);
+
+    </script>
+</body>
+</html>

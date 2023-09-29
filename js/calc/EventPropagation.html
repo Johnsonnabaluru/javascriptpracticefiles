@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            height: 500px;
+            width: 500px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section>article{
+            height: 300px;
+            width: 300px;
+            display: flex;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+        section>article>div{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+            <div>
+
+            </div>
+        </article>
+    </section>
+    <script>
+        let section=document.querySelector("section")
+        let article=document.querySelector("article")
+        let divs=document.querySelector("div")
+
+        section.addEventListener("click",()=>{
+            section.style.background="red"
+            console.log("grand parent");
+        })
+
+        article.addEventListener("click",()=>{
+            article.style.background="blue"
+            console.log(" parent");
+           
+        })
+
+        divs.addEventListener("click",(e)=>{
+            divs.style.background="green"
+            // event.stopPropagation()
+            console.log("child");
+            e.stopPropagation();
+        })
+    </script>
+</body>
+</html>
